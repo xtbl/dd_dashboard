@@ -16,47 +16,61 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-            <div class="hero-unit">
-                <h1>'Allo, 'Allo!</h1>
-                <p>You now have</p>
-                <ul>
-                    <li>HTML5 Boilerplate</li>
-                    <li>Twitter Bootstrap</li>
-                </ul>
-                <p>installed.</p>
-                <h3>Enjoy coding! - Yeoman</h3>
-                <div class="row">
-                    <p>bootstrap test lol</p>
-                    <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header-left-info">
+                    <img src="http://dummyimage.com/115x115/000/ffffff.jpg&text=logo" alt="Logo">
+                    <p>Luis Pérez</p>
+                    <p>Subway, San Pedro</p>
                 </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">Left</button>
-                  <button type="button" class="btn btn-default">Middle</button>
-                  <button type="button" class="btn btn-default">Right</button>
+                <div class="header-right-info">
+                    <img class="didi-logo" src="http://dummyimage.com/136x48/000/ffffff.jpg&text=didi+logo" alt="Didi Logo"/>
+                    <ul class="top-nav">
+                        <li class="btn nav-btn notification">Notificaciones<span class="notification-circle">3</span></li>
+                        <li class="btn nav-btn">Ayuda</li>
+                        <li class="btn nav-btn">Cerrar Sesión</li>
+                    </ul>
                 </div>
-                <form role="form">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Example block-level help text here.</p>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Check me out
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>                
             </div>
+            <div class="main-container">
+                <div class="sidebar">
+                    <ul class="sidebar-nav">
+                        <li class="profile"><a href="#">Perfil</a></li>
+                        <li class="promos"><a href="#">Promociones</a></li>
+                        <li class="products"><a href="#">Productos/Servicios</a></li>
+                        <li class="events"><a href="#">Eventos</a></li>
+                        <li class="analytics"><a href="#">Analytics</a></li>
+                    </ul>
+                    <ul class="terms">
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Términos de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <div class="panel-container">
+                        <div class="container panel promo-panel">
+                            <div class="row head-row">
+                                <div class="col-md-2">Promoción</div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-2">Fin</div>
+                                <div class="col-md-2">Estado</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"><img src="http://dummyimage.com/80x80/000/ffffff.jpg&text=image" alt="Promo image"/></div>
+                                <div class="col-md-6"><p>2x1 de galletas</p></div>
+                                <div class="col-md-2"><p>30-06-2014</p></div>
+                                <div class="col-md-2">
+                                    <a class="btn btn-default active-state" href="#" role="button">Activo</a>
+                                    <a class="btn btn-default edit-btn" href="#" role="button">Editar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container panel event-panel"></div>
+                    </div>
+                    <div class="wide-panel"></div>
+                </div>
+            </div>
+            <div class="footer"></div>
         </div>
 
         <!--[if lt IE 7]>
