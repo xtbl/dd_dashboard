@@ -2,8 +2,66 @@ $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import 'config';
 
 .hero-unit {
     margin: 50px auto 0 auto;
     width: 300px;
 }
+
+.profile {
+  background-color: $didi-green-color;
+}
+
+
+// main-dashboard
+
+.wrapper {
+  padding: 15px;
+}
+// header
+.header {
+  height: 130px;
+  border-bottom: 5px solid $didi-blue-color;
+  .header-left-info {
+    float: left;
+    .header-profile-img-container {
+      float: left;
+      width: 115px;
+      height: 115px;
+    }
+    .header-profile-info-container {
+      float: right;
+      padding: 24% 5px 5px 5px;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        color: $didi-blue-color;
+      }
+    }
+  }
+  .header-right-info {
+    float: right;
+    .didi-logo {
+      float: right;
+    }
+    .top-nav {
+      float: right;
+        li {
+          border-radius: 0px;
+          color: $didi-blue-color;
+          height: 42px;
+          min-width: 128px;
+          padding-top: 20px;
+          text-transform: uppercase;
+          @include didi-light-shadow;
+        }
+    }
+  }
+
+  .main-container {
+    padding: 15px;
+  }
+}
+
