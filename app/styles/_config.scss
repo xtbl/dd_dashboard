@@ -6,6 +6,9 @@ $didi-red-color: #ba131a;
 $didi-grey-color: #808285;
 $didi-light-grey-color: #D5D6D6;
 
+// fonts
+$didi-fonts: Futura,Helvetica, Arial, sans-serif;
+
 // font sizes
 $didi-table-font-size: 14px;
 $didi-btn-font-size: 14px;
@@ -69,7 +72,7 @@ $didi-panel-row-height: 20px;
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 10px 12px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.42857;
 }
 
@@ -82,7 +85,7 @@ $didi-panel-row-height: 20px;
   padding: 10px 12px;
   margin-top: 5px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 @mixin didi-add-button {
@@ -101,7 +104,7 @@ $didi-panel-row-height: 20px;
     color: #000000;
   }
   i.glyphicon {
-    padding-left: 35px;
+    padding-left: 25px;
   }
 }
 

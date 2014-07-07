@@ -3,6 +3,13 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import 'config';
+@import 'didi-icons/*.png';
+
+@include all-didi-icons-sprites;
+
+body {
+  font-family: $didi-fonts;
+}
 
 .hero-unit {
     margin: 50px auto 0 auto;
@@ -109,6 +116,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       text-transform: uppercase;
       text-align: center;
       text-decoration: none;
+      line-height: 9;
     }
     li {
       @include transition(background-color .5s .5s, color .1s);
@@ -122,6 +130,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       height: $didi-sidebar-btn-height;
       border-bottom: $didi-sidebar-btn-separator-width solid white;
       float: left;
+      background: url('/images/didi-icons/perfil.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
     }
     .promos {
@@ -129,6 +138,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       height: $didi-sidebar-btn-height;
       border-bottom: $didi-sidebar-btn-separator-width solid white;
       float: right;
+      background: url('/images/didi-icons/promociones.png') no-repeat 40px 3px;
       background-color: $didi-blue-color;
     }
     .products {
@@ -136,6 +146,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       height: $didi-sidebar-btn-height;
       border-bottom: $didi-sidebar-btn-separator-width solid white;
       float: left;
+      background: url('/images/didi-icons/productos.png') no-repeat 45px 3px;
       background-color: $didi-blue-color;
     }
     .events {
@@ -143,12 +154,14 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       height: $didi-sidebar-btn-height;
       border-bottom: $didi-sidebar-btn-separator-width solid white;
       float: right;
+      background: url('/images/didi-icons/eventos.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
     }
     .analytics {
       width: $didi-sidebar-btn-full-width;
       height: $didi-sidebar-btn-height;
       float: left;
+      background: url('/images/didi-icons/analytics.png') no-repeat 94px 3px;
       border-bottom: $didi-sidebar-btn-separator-width solid white;
       background-color: $didi-blue-color;
     }
