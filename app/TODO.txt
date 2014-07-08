@@ -1,5 +1,12 @@
 
 
 main page
-    basic layout html
-    styles
+    *basic layout html
+    *styles
+    scrollable panels
+    *fix container width when resized
+
+
+notes:
+
+responsive fixing, if download bower dependencies again, do this: http://stackoverflow.com/questions/17935601/how-to-remove-responsive-features-in-twitter-bootstrap-3
