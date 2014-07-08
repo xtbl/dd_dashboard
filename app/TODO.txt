@@ -3,8 +3,9 @@
 main page
     *basic layout html
     *styles
-    scrollable panels
     *fix container width when resized
+    *scrollable panels
+    *scrollable wide-panel
 
 
 notes:

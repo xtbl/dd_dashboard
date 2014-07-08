@@ -203,12 +203,15 @@ body {
   width: $didi-panel-container-width;
   float: left;
 }
+.panel-single-container-half {
+  width: 49%;
+}
 .panel {
-  width: $didi-panel-width;
-//  width: 50%;
+  width: 100%;
 //  height: $didi-panel-height;
   border-radius: 0;
   border: 3px solid white;
+  margin-bottom: 1px;
   @include didi-light-shadow;
   div.head-row {
     color: $didi-blue-color;
@@ -230,10 +233,6 @@ body {
     .col-md-2 {
       padding-left: 2px;
     }
-    &.add-promo-container {
-      border-bottom: none;
-      padding-top: 0;
-    }
     div {
       &:nth-child(2) p {
         padding-top: 30px;
@@ -248,9 +247,20 @@ body {
   }
 }
 
-.promo-panel {
+.promo-panel, .event-panel {
   overflow: scroll;
+  height: 250px;
 }
+
+.add-promo-container {
+  margin: 0;
+  border-bottom: none;
+  padding-top: 0;
+}
+.add-product-container {
+  @extend .add-promo-container;
+}
+
 
 .wide-panel {
   @include didi-light-shadow;
