@@ -1,13 +1,29 @@
 
-
+=======================
 main page
+=======================
     *basic layout html
     *styles
     *fix container width when resized
     *scrollable panels
     *scrollable wide-panel
+    *fix Fatal error: ENOENT, no such file or directory 'dist/images/sample-img-small.png'
+        https://github.com/gruntjs/grunt-contrib-imagemin/issues/16
+    *fix dist old glyphicons
+    *fix dist no icons in sidebar
+    next simple page: eventos dashboard
+=======================
+eventos dashboard
+=======================
+poner estado active en boton sidebar
+
+=======================
+good to have
+=======================
+    add didi favicon
 
 
 notes:
 
-responsive fixing, if download bower dependencies again, do this: http://stackoverflow.com/questions/17935601/how-to-remove-responsive-features-in-twitter-bootstrap-3
+-responsive fixing, if download bower dependencies again, do this: http://stackoverflow.com/questions/17935601/how-to-remove-responsive-features-in-twitter-bootstrap-3
+-glyphicons fix: copy bootstrap directory into /styles dir it has the glyphicons fonts
