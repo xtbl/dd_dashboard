@@ -11,11 +11,16 @@ main page
         https://github.com/gruntjs/grunt-contrib-imagemin/issues/16
     *fix dist old glyphicons
     *fix dist no icons in sidebar
-    next simple page: eventos dashboard
+    *background color changes
+    *remove shadows
+    font change to roboto
 =======================
 eventos dashboard
 =======================
 poner estado active en boton sidebar
+    hacer iconos de color del active
+=======================
+siguiente pagina
 
 =======================
 good to have

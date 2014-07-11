@@ -9,6 +9,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 body {
   font-family: $didi-fonts;
+  background-color: $didi-background-color;
 }
 
 .hero-unit {
@@ -70,11 +71,11 @@ body {
       li {
         border-radius: 0px;
         color: $didi-blue-color;
+        background-color: white;
         height: 42px;
         min-width: 128px;
         padding-top: 20px;
         text-transform: uppercase;
-        @include didi-light-shadow;
         &.notification {
           width: 160px;
           text-align: left;
@@ -130,7 +131,7 @@ body {
     .profile {
       width: $didi-sidebar-btn-thin-width;
       height: $didi-sidebar-btn-height;
-      border-bottom: $didi-sidebar-btn-separator-width solid white;
+      border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       float: left;
       background: url('/images/didi-icons/perfil.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
@@ -138,7 +139,7 @@ body {
     .promos {
       width: $didi-sidebar-btn-wide-width;
       height: $didi-sidebar-btn-height;
-      border-bottom: $didi-sidebar-btn-separator-width solid white;
+      border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       float: right;
       background: url('/images/didi-icons/promociones.png') no-repeat 40px 3px;
       background-color: $didi-blue-color;
@@ -146,7 +147,7 @@ body {
     .products {
       width: $didi-sidebar-btn-wide-width;
       height: $didi-sidebar-btn-height;
-      border-bottom: $didi-sidebar-btn-separator-width solid white;
+      border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       float: left;
       background: url('/images/didi-icons/productos.png') no-repeat 45px 3px;
       background-color: $didi-blue-color;
@@ -154,7 +155,7 @@ body {
     .events {
       width: $didi-sidebar-btn-thin-width;
       height: $didi-sidebar-btn-height;
-      border-bottom: $didi-sidebar-btn-separator-width solid white;
+      border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       float: right;
       background: url('/images/didi-icons/eventos.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
@@ -164,7 +165,7 @@ body {
       height: $didi-sidebar-btn-height;
       float: left;
       background: url('/images/didi-icons/analytics.png') no-repeat 94px 3px;
-      border-bottom: $didi-sidebar-btn-separator-width solid white;
+      border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       background-color: $didi-blue-color;
     }
 
@@ -212,7 +213,6 @@ body {
   border-radius: 0;
   border: 3px solid white;
   margin-bottom: 1px;
-  @include didi-light-shadow;
   div.head-row {
     color: $didi-blue-color;
     text-transform: uppercase;
@@ -271,7 +271,7 @@ body {
 
 
 .wide-panel {
-  @include didi-light-shadow;
+  background-color: white;
   margin-top: 10px;
   float: left;
   width: 100%;
