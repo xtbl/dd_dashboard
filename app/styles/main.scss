@@ -250,6 +250,24 @@ body {
   }
 }
 
+.head-row-fixed {
+  background-color: white;
+  color: #2681a7;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 12px;
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid $didi-grey-color;
+  div {
+    padding: 12px 0 0 2px;
+  }
+  .light-border-sides {
+    border-right: 1px solid #808285;
+    border-left: 1px solid #808285;
+  }
+}
+
 .promo-panel, .event-panel {
   overflow: scroll;
   height: 250px;
@@ -272,9 +290,11 @@ body {
 
 .wide-panel {
   background-color: white;
-  margin-top: 10px;
   float: left;
   width: 100%;
+  overflow: scroll;
+  height: 100px;
+  padding-top: 10px;
   div {
 
     &.row {
@@ -300,6 +320,12 @@ body {
       margin: 0;
     }
   }
+}
+
+.wide-panel-container {
+  margin-top: 32px;
+  width: 100%;
+  float: left;
 }
 
 .footer {

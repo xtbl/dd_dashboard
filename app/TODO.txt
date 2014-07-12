@@ -13,7 +13,11 @@ main page
     *fix dist no icons in sidebar
     *background color changes
     *remove shadows
-    font change to roboto
+    *font change to roboto
+    *table headers fixed
+    *add scroll to wide panel
+    fix header in events page
+    change add buttons to agregar
 =======================
 eventos dashboard
 =======================
