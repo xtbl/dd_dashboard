@@ -16,7 +16,7 @@ main page
     *font change to roboto
     *table headers fixed
     *add scroll to wide panel
-    fix header in events page
+    *fix header in events page
     change add buttons to agregar
 =======================
 eventos dashboard
