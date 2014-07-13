@@ -17,11 +17,11 @@ main page
     *table headers fixed
     *add scroll to wide panel
     *fix header in events page
-    change add buttons to agregar
+    *change add buttons to agregar
 =======================
 eventos dashboard
 =======================
-poner estado active en boton sidebar
+*poner estado active en boton sidebar
     hacer iconos de color del active
 =======================
 siguiente pagina
@@ -30,6 +30,7 @@ siguiente pagina
 good to have
 =======================
     add didi favicon
+    sprites spacing $nav-icons-spacing: 20px; http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
 
 
 notes:

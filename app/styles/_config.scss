@@ -32,7 +32,7 @@ $didi-main-content-width: 1070px;
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  $didi-main-content-width: 1070px;
+  $didi-main-content-width: 1080px;
 }
 
 
@@ -95,7 +95,7 @@ $didi-panel-row-height: 20px;
   border-radius: 0;
   width: 200px;
   height: 40px;
-  padding: 18px 0px 0px 0px;
+  padding: 18px 10px 0px 0px;
   margin-top: 0;
   text-transform: uppercase;
   font-size: 12px;
@@ -104,8 +104,13 @@ $didi-panel-row-height: 20px;
     border: 1px solid $didi-grey-color;
     color: #000000;
   }
+  span {
+    float: left;
+    padding-left: 10px;
+  }
   i.glyphicon {
-//    padding-left: 25px;
+    padding-left: 25px;
+    float: right;
   }
 }
 

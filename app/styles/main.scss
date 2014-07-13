@@ -98,6 +98,7 @@ body {
   padding-top: 15px;
   min-height: px;
   float: left;
+  margin-bottom: 5px;
 }
 .sidebar {
   width: $didi-sidebar-width;
@@ -128,6 +129,11 @@ body {
         background-color: $didi-light-grey-color;
       }
     }
+    .active-side-nav-btn {
+      a {
+        color: $didi-blue-color;
+      }
+    }
     .profile {
       width: $didi-sidebar-btn-thin-width;
       height: $didi-sidebar-btn-height;
@@ -135,6 +141,10 @@ body {
       float: left;
       background: url('/images/didi-icons/perfil.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
+      &.active {
+        @extend .active-side-nav-btn;
+        background: url('/images/didi-icons/perfil_active.png') no-repeat 27px 3px white;
+      }
     }
     .promos {
       width: $didi-sidebar-btn-wide-width;
@@ -143,6 +153,10 @@ body {
       float: right;
       background: url('/images/didi-icons/promociones.png') no-repeat 40px 3px;
       background-color: $didi-blue-color;
+      &.active {
+        @extend .active-side-nav-btn;
+        background: url('/images/didi-icons/promociones_active.png') no-repeat 40px 3px white;
+      }
     }
     .products {
       width: $didi-sidebar-btn-wide-width;
@@ -151,6 +165,10 @@ body {
       float: left;
       background: url('/images/didi-icons/productos.png') no-repeat 45px 3px;
       background-color: $didi-blue-color;
+      &.active {
+        @extend .active-side-nav-btn;
+        background: url('/images/didi-icons/productos_active.png') no-repeat 45px 3px white;
+      }
     }
     .events {
       width: $didi-sidebar-btn-thin-width;
@@ -159,6 +177,10 @@ body {
       float: right;
       background: url('/images/didi-icons/eventos.png') no-repeat 27px 3px;
       background-color: $didi-green-color;
+      &.active {
+        @extend .active-side-nav-btn;
+        background: url('/images/didi-icons/eventos_active.png') no-repeat 27px 3px white;
+      }
     }
     .analytics {
       width: $didi-sidebar-btn-full-width;
@@ -167,6 +189,10 @@ body {
       background: url('/images/didi-icons/analytics.png') no-repeat 94px 3px;
       border-bottom: $didi-sidebar-btn-separator-width solid $didi-background-color;
       background-color: $didi-blue-color;
+      &.active {
+        @extend .active-side-nav-btn;
+        background: url('/images/didi-icons/analytics_active.png') no-repeat 94px 3px white;
+      }
     }
 
   }
@@ -199,6 +225,7 @@ body {
 .main-content {
   width: $didi-main-content-width;
   float: right;
+  padding-left: 20px;
 }
 .panel-container {
   width: $didi-panel-container-width;
