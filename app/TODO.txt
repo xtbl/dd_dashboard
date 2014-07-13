@@ -18,13 +18,28 @@ main page
     *add scroll to wide panel
     *fix header in events page
     *change add buttons to agregar
+    *poner estado active en boton sidebar
+        *hacer iconos de color del active
 =======================
-eventos dashboard
+*eventos dashboard
+*promociones dashboard
 =======================
-*poner estado active en boton sidebar
-    hacer iconos de color del active
+
+
+map in add location
+    https://developers.google.com/maps/documentation/embed/guide
+    http://www.phpclasses.org/blog/package/1/post/5-Locating-addresses-on-Google-Maps-embedded-in-PHP-generated-Web-forms.html
+    http://www.meta-language.net/forms-examples.html?example=test_map_location_input
+
+
+analytics
+page
+graph 1
+graph 2
+
+
 =======================
-siguiente pagina
+
 
 =======================
 good to have
