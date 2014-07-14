@@ -24,7 +24,11 @@ main page
 *eventos dashboard
 *promociones dashboard
 =======================
-
+create eventos modal
+    *basic modal
+    *add template/form
+    modal styles
+    add functionality
 
 map in add location
     https://developers.google.com/maps/documentation/embed/guide

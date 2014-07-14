@@ -3,6 +3,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import 'config';
+@import 'modals';
 @import 'didi-icons/*.png';
 
 @include all-didi-icons-sprites;

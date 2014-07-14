@@ -164,3 +164,7 @@ $didi-sidebar-btn-height: 70px;
   font-size: 11px;
   padding: 3px;
 }
+
+@mixin didi-dashboard-modal {
+  background-color: $didi-background-color;
+}
