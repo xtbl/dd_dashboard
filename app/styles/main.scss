@@ -4,6 +4,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import 'config';
 @import 'modals';
+@import 'login';
 @import 'didi-icons/*.png';
 
 @include all-didi-icons-sprites;
@@ -28,7 +29,7 @@ body {
 .wrapper {
   padding: 15px;
   // fixed width
-  width: 1350px;
+  width: $didi-wrapper-width;
 }
 // header
 .header {
