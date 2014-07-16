@@ -21,6 +21,7 @@ main page
     *poner estado active en boton sidebar
         *hacer iconos de color del active
 =======================
+*login page
 *eventos dashboard
 *promociones dashboard
 =======================
@@ -29,6 +30,8 @@ create eventos modal
     *add template/form
     modal styles
     add functionality
+        calendar: bootstrap datepicker http://www.eyecon.ro/bootstrap-datepicker/
+        time:
 
 map in add location
     https://developers.google.com/maps/documentation/embed/guide
