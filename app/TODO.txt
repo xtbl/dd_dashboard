@@ -25,6 +25,9 @@ main page
 *eventos dashboard
 *promociones dashboard
 =======================
+modals
+
+
 create eventos modal
     *basic modal
     *add template/form
@@ -33,11 +36,31 @@ create eventos modal
         calendar: bootstrap datepicker http://www.eyecon.ro/bootstrap-datepicker/
         time:
 
-map in add location
+        calendar and time: Datepair Plugin Example http://jonthornton.github.io/jquery-timepicker/
+
+map in add location autocomplete
+    read guide and complete example: https://developers.google.com/maps/documentation/javascript/tutorial
+    -> https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
+
+API key:
+AIzaSyAz-tPK3sZ2ydPq_ikg-6pLkNjLcqOxFqo
+
     https://developers.google.com/maps/documentation/embed/guide
+    http://techslides.com/50-javascript-libraries-and-plugins-for-maps/
+
     http://www.phpclasses.org/blog/package/1/post/5-Locating-addresses-on-Google-Maps-embedded-in-PHP-generated-Web-forms.html
     http://www.meta-language.net/forms-examples.html?example=test_map_location_input
 
+    bing maps cons: http://stackoverflow.com/questions/22294861/bing-maps-autocomplete-get-long-and-lat-from-address
+
+    pasar a API cliente, pedir cuenta de ellos: Google Maps JavaScript API v3 Courtesy limit: 25,000 requests/day • Pricing
+
+        Google Maps API for Business license:
+        Your site is only available to paying customers.
+        Your site is only accessible within your company or on your intranet.
+        Your application relates to enterprise dispatch, fleet management, business asset tracking, or similar applications.
+
+    ->By default, a key can be used on any site. We strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites. You can specify which domains are allowed to use your API key by clicking the Edit allowed referrers... link for your key.
 
 analytics
 page

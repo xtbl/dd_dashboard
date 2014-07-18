@@ -64,3 +64,20 @@
 .add-event-content {
 //  font-size: 20px;
 }
+
+.date-time-container {
+  input {
+    width: 90px;
+    height: 30px;
+    padding: 8px;
+  }
+}
+
+.didi-calendar-ico {
+  padding: 10px 10px 11px 10px;
+  background: url('/images/didi-icons/calendar.png') no-repeat 0px 0px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  cursor: pointer;
+}

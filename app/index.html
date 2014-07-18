@@ -273,17 +273,31 @@
                         </div>
                         MAPA
                         <!--agregar calendarios-->
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Acepto los <a href="#">Términos de Uso</a>
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                Avisarme cuando termina la promoción
-                            </label>
+                        <!--<div class="checkbox">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" value="">-->
+                                <!--Acepto los <a href="#">Términos de Uso</a>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div class="checkbox">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" value="">-->
+                                <!--Avisarme cuando termina la promoción-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <div class="date-time-container">
+                            <p id="datepairExample">
+                                <label for="">De:</label>
+                                <input type="text" class="date start" />
+                                <span class="didi-calendar-ico"></span>
+                                <label for="">A las:</label>
+                                <input type="text" class="time start" />
+                                <label for="">Hasta la(s):</label>
+                                <input type="text" class="time end" />
+                                <label for="">Del:</label>
+                                <input type="text" class="date end" />
+                                <span class="didi-calendar-ico"></span>
+                            </p>
                         </div>
                         <div class="button-container">
                             <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
@@ -309,6 +323,10 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/datepair.js/dist/datepair.js"></script>
+        <script src="bower_components/datepair.js/dist/jquery.datepair.js"></script>
+        <script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
+        <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
