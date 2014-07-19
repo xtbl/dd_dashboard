@@ -24,6 +24,7 @@ main page
 *login page
 *eventos dashboard
 *promociones dashboard
+*set push to remote dibo
 =======================
 modals
 
@@ -70,8 +71,6 @@ graph 2
 
 
 =======================
-push to remote
-https://github.com/jamscr/dibo
 
 =======================
 good to have

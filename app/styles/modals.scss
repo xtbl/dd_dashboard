@@ -94,7 +94,7 @@
 }
 
 .datepicker {
-  // important! added to avoid the need to customize datepicker plugin to work with modals
+  // important! added to make datepicker work in modals
   z-index:1151 !important;
 }
 
@@ -106,7 +106,13 @@
   @extend .datetimer-label-container;
   padding-bottom: 25px;
 }
+//----------------------------------------
+//                maps
+//----------------------------------------
+#map-canvas {
+  height: 120px;
+  width: 100%;
+}
+.map-container-modal {
 
-//.didi-chevron {
-//  background: url('/images/didi-icons/chevron.png') no-repeat 0px 0px #ffffff;
-//}
+}

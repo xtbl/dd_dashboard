@@ -274,6 +274,10 @@
                             <input type="text" class="form-control" id="inputLocacion" placeholder="">
                         </div>
                         MAPA
+                        <div class="map-container-modal">
+                            <div id="map-canvas"></div>
+                        </div>
+
                         <!--agregar calendarios-->
                         <!--<div class="checkbox">-->
                             <!--<label>-->
@@ -315,21 +319,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--<p id="datepairExample">-->
-                                <!--&lt;!&ndash;<label for="">De:</label>&ndash;&gt;-->
-                                <!--<input type="text" class="date start" />-->
-                                <!--<span class="didi-calendar-ico"></span>-->
-                                <!--&lt;!&ndash;<label for="">A las:</label>&ndash;&gt;-->
-                                <!--<input type="text" class="time start" />-->
-                                <!--&lt;!&ndash;<label for="">Hasta la(s):</label>&ndash;&gt;-->
-                                <!--<input type="text" class="time end" />-->
-                                <!--&lt;!&ndash;<label for="">Del:</label>&ndash;&gt;-->
-                                <!--<input type="text" class="date end" />-->
-                                <!--<span class="didi-calendar-ico"></span>-->
-                                <!--<div class="input-group date">-->
-                                    <!--<input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>-->
-                                <!--</div>-->
-                            <!--</p>-->
                         </div>
                         <div class="button-container">
                             <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
@@ -366,6 +355,20 @@
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
         <!--endbuild-->
 
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz-tPK3sZ2ydPq_ikg-6pLkNjLcqOxFqo">
+        </script>
+        <!--<script type="text/javascript">-->
+            <!--function initialize() {-->
+                <!--var mapOptions = {-->
+                    <!--center: new google.maps.LatLng(-34.397, 150.644),-->
+                    <!--zoom: 8-->
+                <!--};-->
+                <!--var map = new google.maps.Map(document.getElementById("map-canvas"),-->
+                        <!--mapOptions);-->
+            <!--}-->
+            <!--google.maps.event.addDomListener(window, 'load', initialize);-->
+        <!--</script>-->
         <!-- build:js scripts/plugins.js -->
         <!--<script src="bower_components/sass-bootstrap/js/bootstrap-affix.js"></script>-->
         <!--<script src="bower_components/sass-bootstrap/js/bootstrap-alert.js"></script>-->
