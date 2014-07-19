@@ -1,4 +1,0 @@
-dibo
-====
-
-frontend didi dashboard
