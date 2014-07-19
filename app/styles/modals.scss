@@ -42,6 +42,13 @@
     font-weight: 300;
     margin-bottom: 0;
   }
+  .datetimer-label-container {
+    label {
+      text-transform: none;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
   textarea {
     border: none;
     border-radius: 0;
@@ -67,9 +74,13 @@
 
 .date-time-container {
   input {
-    width: 90px;
+    width: 95px;
     height: 30px;
-    padding: 8px;
+    padding: 20px 15px 20px 12px;
+    &.time {
+      background: url("/images/didi-icons/chevron.png") no-repeat 85px 14px white;
+      width: 120px;
+    }
   }
 }
 
@@ -81,3 +92,21 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.datepicker {
+  // important! added to avoid the need to customize datepicker plugin to work with modals
+  z-index:1151 !important;
+}
+
+.datetimer-label-container {
+  width: 600px;
+}
+
+.datetimer-input-container-group {
+  @extend .datetimer-label-container;
+  padding-bottom: 25px;
+}
+
+//.didi-chevron {
+//  background: url('/images/didi-icons/chevron.png') no-repeat 0px 0px #ffffff;
+//}

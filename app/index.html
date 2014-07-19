@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker.css">
+        <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -286,18 +288,48 @@
                             <!--</label>-->
                         <!--</div>-->
                         <div class="date-time-container">
-                            <p id="datepairExample">
-                                <label for="">De:</label>
-                                <input type="text" class="date start" />
-                                <span class="didi-calendar-ico"></span>
-                                <label for="">A las:</label>
-                                <input type="text" class="time start" />
-                                <label for="">Hasta la(s):</label>
-                                <input type="text" class="time end" />
-                                <label for="">Del:</label>
-                                <input type="text" class="date end" />
-                                <span class="didi-calendar-ico"></span>
-                            </p>
+                            <div class="container datetimer-label-container">
+                                <div class="row">
+                                    <div class="col-md-3"><label>De:</label></div>
+                                    <div class="col-md-3"><label>A las:</label></div>
+                                    <div class="col-md-3"><label>Hasta la(s):</label></div>
+                                    <div class="col-md-3"><label>Del:</label></div>
+                                </div>
+                            </div>
+                            <div class="container datetimer-input-container-group">
+                                <div class="row ">
+                                    <div class="col-md-3 datetimer-input-container-col">
+                                        <input type="text" class="date start" />
+                                        <span class="didi-calendar-ico start"></span>
+                                    </div>
+                                    <div class="col-md-3 datetimer-input-container-col">
+                                        <input type="text" class="time start" />
+                                        <span class="didi-chevron"></span>
+                                    </div>
+                                    <div class="col-md-3 datetimer-input-container-col">
+                                        <input type="text" class="time end" />
+                                    </div>
+                                    <div class="col-md-3 datetimer-input-container-col">
+                                        <input type="text" class="date end" />
+                                        <span class="didi-calendar-ico end"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<p id="datepairExample">-->
+                                <!--&lt;!&ndash;<label for="">De:</label>&ndash;&gt;-->
+                                <!--<input type="text" class="date start" />-->
+                                <!--<span class="didi-calendar-ico"></span>-->
+                                <!--&lt;!&ndash;<label for="">A las:</label>&ndash;&gt;-->
+                                <!--<input type="text" class="time start" />-->
+                                <!--&lt;!&ndash;<label for="">Hasta la(s):</label>&ndash;&gt;-->
+                                <!--<input type="text" class="time end" />-->
+                                <!--&lt;!&ndash;<label for="">Del:</label>&ndash;&gt;-->
+                                <!--<input type="text" class="date end" />-->
+                                <!--<span class="didi-calendar-ico"></span>-->
+                                <!--<div class="input-group date">-->
+                                    <!--<input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>-->
+                                <!--</div>-->
+                            <!--</p>-->
                         </div>
                         <div class="button-container">
                             <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
@@ -331,19 +363,23 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/bootstrap-affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/bootstrap-tab.js"></script>
+        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+        <!--endbuild-->
+
+        <!-- build:js scripts/plugins.js -->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-affix.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-alert.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-dropdown.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-tooltip.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-modal.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-transition.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-button.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-popover.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-typeahead.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-carousel.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>-->
+        <!--<script src="bower_components/sass-bootstrap/js/bootstrap-tab.js"></script>-->
         <!-- endbuild -->
 </body>
 </html>

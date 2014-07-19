@@ -37,6 +37,7 @@ create eventos modal
         time:
 
         calendar and time: Datepair Plugin Example http://jonthornton.github.io/jquery-timepicker/
+            add event to calendar button
 
 map in add location autocomplete
     read guide and complete example: https://developers.google.com/maps/documentation/javascript/tutorial
@@ -69,7 +70,8 @@ graph 2
 
 
 =======================
-
+push to remote
+https://github.com/jamscr/dibo
 
 =======================
 good to have

@@ -1,6 +1,3 @@
-console.log('main.js');
-
-console.log($);
 
 $(".add-btn").click(function(){
     console.log("click");
@@ -17,16 +14,28 @@ $(".didi-modal-close").click(function() {
     $(".didi-modal").modal("hide");
 });
 
+// date and time in modal
+
 // initialize input widgets first
-$('#datepairExample .time').timepicker({
+$('.datetimer-input-container-col .time').timepicker({
     'showDuration': true,
-    'timeFormat': 'g:ia'
+    'timeFormat': 'g:ia',
+    'autocomplete': true
 });
 
-$('#datepairExample .date').datepicker({
-    'format': 'yyyy-m-d',
+$('.datetimer-input-container-col .date').datepicker({
+    'format': 'd/m/yyyy',
     'autoclose': true
 });
 
+// date controls for clickable icon
+$('.didi-calendar-ico.start').click(function() {
+    $('.datetimer-input-container-col .date.start').datepicker('show');
+});
+
+$('.didi-calendar-ico.end').click(function() {
+    $('.datetimer-input-container-col .date.end').datepicker('show');
+});
+
 // initialize datepair
-$('#datepairExample').datepair();
+$('.datetimer-input-container-col').datepair();
