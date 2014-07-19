@@ -33,8 +33,8 @@ create eventos modal
     *add template/form
     modal styles
     add functionality
-        calendar: bootstrap datepicker http://www.eyecon.ro/bootstrap-datepicker/
-        time:
+        *calendar: bootstrap datepicker http://www.eyecon.ro/bootstrap-datepicker/
+        *time:
 
         calendar and time: Datepair Plugin Example http://jonthornton.github.io/jquery-timepicker/
             add event to calendar button
