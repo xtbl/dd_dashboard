@@ -25,7 +25,10 @@ main page
 *eventos dashboard
 *promociones dashboard
 *set push to remote dibo
+*change active/inactive spans to buttons
 split into modules
+add specific modal method to specific buttons
+
 =======================
 modals
 
@@ -33,8 +36,8 @@ modals
 create eventos modal
     *basic modal
     *add template/form
-    modal styles
-    add functionality
+    *modal styles
+    *add functionality
         *calendar: bootstrap datepicker http://www.eyecon.ro/bootstrap-datepicker/
         *time:
 
