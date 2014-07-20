@@ -26,8 +26,8 @@ main page
 *promociones dashboard
 *set push to remote dibo
 *change active/inactive spans to buttons
-split into modules
-add specific modal method to specific buttons
+*split into modules
+*add specific modal method to specific buttons
 
 =======================
 modals
