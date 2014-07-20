@@ -25,6 +25,7 @@ main page
 *eventos dashboard
 *promociones dashboard
 *set push to remote dibo
+split into modules
 =======================
 modals
 
@@ -41,8 +42,11 @@ create eventos modal
             add event to calendar button
 
 map in add location autocomplete
-    read guide and complete example: https://developers.google.com/maps/documentation/javascript/tutorial
-    -> https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
+    *read guide and complete example: https://developers.google.com/maps/documentation/javascript/tutorial
+    *autocomplete place
+        https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
+
+
 
 API key:
 AIzaSyAz-tPK3sZ2ydPq_ikg-6pLkNjLcqOxFqo
