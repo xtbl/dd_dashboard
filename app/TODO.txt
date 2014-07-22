@@ -29,9 +29,22 @@ main page
 *split into modules
 *add specific modal method to specific buttons
 
+modals change x close button to image icon
+=======================
+analytics
+=======================
+create analytics page base
+http://morrisjs.github.io/morris.js/index.html
+    other options
+        http://www.chartjs.org/
+        http://www.flotcharts.org/flot/examples/
+        http://designmodo.com/jquery-charts-graphs/
+    line and bar
+    set data objects
+    set colors
+    set styles
 =======================
 modals
-
 
 create eventos modal
     *basic modal
