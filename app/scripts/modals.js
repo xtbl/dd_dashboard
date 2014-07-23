@@ -1,6 +1,6 @@
 /**
  * Modal related functionality
- * needs:
+ * dependencies:
  *  SearchPlaceMap for map related functionality
  */
 

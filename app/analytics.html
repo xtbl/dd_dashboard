@@ -6,13 +6,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>DiDi Dashboard - Analytics</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker.css">
     <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css">
+    <link rel="stylesheet" href="bower_components/morrisjs/morris.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -60,10 +61,12 @@
         <div class="panel-single-container-half pull-left">
             <!--BAR GRAPH GOES HERE-->
             <p>grafico de barras</p>
+            <div id="analytics-grafico-barras"></div>
         </div>
         <div class="panel-single-container-half pull-right">
             <!--LINE GRAPH GOES HERE-->
             <p>grafico de lineas</p>
+            <div id="analytics-grafico-lineas"></div>
         </div>
     </div>
     <div class="wide-panel-container">
@@ -184,8 +187,10 @@
 </script>
 
 <!-- build:js scripts/main.js -->
-<script src="bower_components/jquery/jquery.js"></script>
-<script src="scripts/main.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/raphael/raphael.js"></script>
+<script src="bower_components/morrisjs/morris.js"></script>
+<script src="scripts/DiDiAnalytics.js"></script>
 <!-- endbuild -->
 
 <!-- build:js scripts/plugins.js -->

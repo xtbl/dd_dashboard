@@ -33,7 +33,10 @@ modals change x close button to image icon
 =======================
 analytics
 =======================
-create analytics page base
+*create analytics page base
+*create line chart base
+*create bar chart base
+add and verify dynamic behavior for charts: can be modified with on change
 http://morrisjs.github.io/morris.js/index.html
     other options
         http://www.chartjs.org/
