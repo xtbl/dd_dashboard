@@ -59,12 +59,49 @@
 <div class="main-content">
     <div class="panel-container">
         <div class="panel-single-container-half pull-left">
-            <!--BAR GRAPH GOES HERE-->
+           <!--chart header-->
+            <div class="row head-row-fixed">
+                <div class="col-md-2">Promoción por:</div>
+                <div class="col-md-6"></div>
+                <div class="col-md-4 light-border-sides text-center">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default" tabindex="-1">Lugar</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" id="bar-chart-options">
+                            <li><a data-line-chart-set="numPersonas" href="#">Lugar</a></li>
+                            <li><a data-line-chart-set="criterio1" href="#">Criterio 1</a></li>
+                            <li><a data-line-chart-set="criterio2" href="#">Criterio 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <p>grafico de barras</p>
             <div id="analytics-grafico-barras"></div>
         </div>
         <div class="panel-single-container-half pull-right">
-            <!--LINE GRAPH GOES HERE-->
+            <!--didi analytics chart header-->
+            <div class="row head-row-fixed">
+                <div class="col-md-6">Evento por:</div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4 light-border-sides text-center">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default chart-selection-btn" tabindex="-1"># de personas</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" id="line-chart-options">
+                            <li><a data-line-chart-set="numPersonas" href="#"># de personas</a></li>
+                            <li><a data-line-chart-set="criterio1" href="#">Criterio 1</a></li>
+                            <li><a data-line-chart-set="criterio2" href="#">Criterio 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--didi analytics chart header-->
             <p>grafico de lineas</p>
             <div id="analytics-grafico-lineas"></div>
         </div>
@@ -195,6 +232,7 @@
 
 <!-- build:js scripts/plugins.js -->
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
 <!--endbuild-->
 
 </body>

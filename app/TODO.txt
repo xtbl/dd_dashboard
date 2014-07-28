@@ -37,6 +37,12 @@ analytics
 *create line chart base
 *create bar chart base
 add and verify dynamic behavior for charts: can be modified with on change
+create proper method to choose from different data sets
+find component for graph dropdown -> Segmented buttons: http://getbootstrap.com/components/#dropdowns
+implement component and make the update method work with the dropdown
+update styles
+
+
 http://morrisjs.github.io/morris.js/index.html
     other options
         http://www.chartjs.org/
@@ -46,6 +52,7 @@ http://morrisjs.github.io/morris.js/index.html
     set data objects
     set colors
     set styles
+
 =======================
 modals
 
@@ -86,12 +93,6 @@ AIzaSyAz-tPK3sZ2ydPq_ikg-6pLkNjLcqOxFqo
         Your application relates to enterprise dispatch, fleet management, business asset tracking, or similar applications.
 
     ->By default, a key can be used on any site. We strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites. You can specify which domains are allowed to use your API key by clicking the Edit allowed referrers... link for your key.
-
-analytics
-page
-graph 1
-graph 2
-
 
 =======================
 
