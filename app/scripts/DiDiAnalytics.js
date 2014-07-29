@@ -38,7 +38,8 @@ var DiDiAnalyticsCharts = {
         this.analyticsLineChart = analyticsLineChart;
         // initializes line chart dropdown controls/selection of chart data
         var self = this;
-        $("#line-chart-options li a").on("click", function() {
+        $("#line-chart-options li a").on("click", function(e) {
+            e.preventDefault();
             var chartDataSelected = $(this).data("lineChartSet");
             self.setLineChartData(chartDataSelected);
             var chartDataSelectedText = $(this).text();

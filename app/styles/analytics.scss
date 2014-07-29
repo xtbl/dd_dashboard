@@ -1,0 +1,24 @@
+//----------------------------------------
+//                analytics
+//----------------------------------------
+@import 'config';
+
+.analytics-dropdown-container {
+  text-align: right;
+    &.no-padding {
+      padding-top: 0;
+    }
+  .input-group-btn {
+    padding-top: 0;
+  }
+  .btn {
+    border: none;
+    text-transform: uppercase;
+    color: $didi-blue-color;
+    font-size: 12px;
+    background-color: white;
+  }
+  .dropdown-toggle {
+    border-left: 1px solid $didi-grey-color;
+  }
+}
