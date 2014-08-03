@@ -43,7 +43,6 @@ $didi-panel-width:49%;
 $didi-panel-height: 300px;
 
 @mixin didi-footer {
-  width: 100%;
   clear: both;
   text-align: center;
   height: 40px;
@@ -168,4 +167,9 @@ $didi-sidebar-btn-height: 70px;
 
 @mixin didi-dashboard-modal {
   background-color: $didi-background-color;
+}
+
+@mixin center-wrapper {
+  margin: 0 auto;
+  width: $didi-wrapper-width;
 }

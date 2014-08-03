@@ -30,7 +30,7 @@ body {
 .wrapper {
   padding: 15px;
   // fixed width
-  width: $didi-wrapper-width;
+  @include center-wrapper;
 }
 // header
 .header {
@@ -365,6 +365,7 @@ body {
 
 .footer {
   @include didi-footer;
+  @include center-wrapper;
 }
 
 

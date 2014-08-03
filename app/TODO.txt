@@ -29,7 +29,7 @@ main page
 *split into modules
 *add specific modal method to specific buttons
 
-modals change x close button to image icon
+->modals change x close button to image icon
 =======================
 analytics
 =======================
@@ -37,10 +37,15 @@ analytics
 *create line chart base
 *create bar chart base
 add and verify dynamic behavior for charts: can be modified with on change
-create proper method to choose from different data sets
-find component for graph dropdown -> Segmented buttons: http://getbootstrap.com/components/#dropdowns
-implement component and make the update method work with the dropdown
-update styles
+*create proper method to choose from different data sets
+*find component for graph dropdown -> Segmented buttons: http://getbootstrap.com/components/#dropdowns
+*implement component and make the update method work with the dropdown
+*update styles
+->update styles and funcionality in barchart
+->fix wrapper position in high res
+->create promotions modal
+    carousel
+    sliders
 
 
 http://morrisjs.github.io/morris.js/index.html
