@@ -28,9 +28,20 @@
   .analytics-promo-label {
     padding: 5px 12px 1px 12px;
     text-transform: uppercase;
+    font-size: 12px;
   }
 }
 
 .analytics-wide-panel {
   margin-bottom: 10px;
+  .row {
+    .col-md-3 {
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+  .small-padding {
+    @include small-padding;
+  }
 }

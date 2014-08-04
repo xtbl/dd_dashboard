@@ -61,7 +61,6 @@ var DiDiAnalyticsCharts = {
             xkey: 'y',
             ykeys: ['a'],
             labels: ['Promocion'],
-            xLabelsDiagonal: true,
             xLabelMargin: 10, // set smaller margin to allow longer names like provincias, etc
             barColors: this.settings.colors,
             grid: false,

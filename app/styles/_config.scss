@@ -173,3 +173,7 @@ $didi-sidebar-btn-height: 70px;
   margin: 0 auto;
   width: $didi-wrapper-width;
 }
+
+@mixin small-padding {
+  padding: 5px;
+}
