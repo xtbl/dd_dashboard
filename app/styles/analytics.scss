@@ -22,3 +22,15 @@
     border-left: 1px solid $didi-grey-color;
   }
 }
+
+.analytics-panel {
+  background-color: white;
+  .analytics-promo-label {
+    padding: 5px 12px 1px 12px;
+    text-transform: uppercase;
+  }
+}
+
+.analytics-wide-panel {
+  margin-bottom: 10px;
+}

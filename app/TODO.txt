@@ -42,7 +42,7 @@ add and verify dynamic behavior for charts: can be modified with on change
 *implement component and make the update method work with the dropdown
 *update styles
 ->update styles and funcionality in barchart
-->fix wrapper position in high res
+*fix wrapper position in high res
 ->create promotions modal
     carousel
     sliders

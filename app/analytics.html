@@ -59,27 +59,28 @@
 <div class="main-content">
     <div class="panel-container">
         <div class="panel-single-container-half pull-left">
-           <!--chart header-->
+            <!--didi analytics chart header-->
             <div class="row head-row-fixed">
-                <div class="col-md-2">Promoción por:</div>
-                <div class="col-md-6"></div>
-                <div class="col-md-4 light-border-sides text-center">
+                <div class="col-md-6">Promoción por:</div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4 light-border-sides text-center analytics-dropdown-container no-padding">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default" tabindex="-1">Lugar</button>
+                        <button type="button" class="btn btn-default chart-selection-btn" tabindex="-1">Lugar</button>
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right" role="menu" id="bar-chart-options">
-                            <li><a data-line-chart-set="numPersonas" href="#">Lugar</a></li>
-                            <li><a data-line-chart-set="criterio1" href="#">Criterio 1</a></li>
-                            <li><a data-line-chart-set="criterio2" href="#">Criterio 2</a></li>
+                            <li><a data-bar-chart-set="lugar" href="#">Lugar</a></li>
+                            <li><a data-bar-chart-set="criterio1" href="#">Criterio 1</a></li>
+                            <li><a data-bar-chart-set="criterio2" href="#">Criterio 2</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <p>grafico de barras</p>
-            <div id="analytics-grafico-barras"></div>
+            <!--didi analytics chart header-->
+            <div class="analytics-panel"><p class="no-margin analytics-promo-label">2x1 Galletas</p></div>
+            <div id="analytics-grafico-barras" class="analytics-panel"></div>
         </div>
         <div class="panel-single-container-half pull-right">
             <!--didi analytics chart header-->
@@ -102,11 +103,10 @@
                 </div>
             </div>
             <!--didi analytics chart header-->
-            <p>grafico de lineas</p>
-            <div id="analytics-grafico-lineas"></div>
+            <div id="analytics-grafico-lineas" class="analytics-panel"></div>
         </div>
     </div>
-    <div class="wide-panel-container">
+    <div class="wide-panel-container analytics-wide-panel">
         <div class="row head-row-fixed">
             <div class="col-md-3"><p>Producto / Servicio</p></div>
             <div class="col-md-3"></div>

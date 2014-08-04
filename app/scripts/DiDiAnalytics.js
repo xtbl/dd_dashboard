@@ -48,23 +48,37 @@ var DiDiAnalyticsCharts = {
         })
     },
     barChartInit: function() {
-        Morris.Bar({
+        var analyticsBarChart = Morris.Bar({
             element: this.settings.barGraphEl,
             data: [
-                { y: '2006', a: 100, b: 90, c: 40 },
-                { y: '2007', a: 75,  b: 65, c: 50 },
-//                { y: '2008', a: 50,  b: 40, c: 70 },
-//                { y: '2009', a: 75,  b: 65, c: 40 },
-//                { y: '2010', a: 50,  b: 40, c: 20 },
-//                { y: '2011', a: 75,  b: 65, c: 90 },
-                { y: '2012', a: 100, b: 90, c: 100 }
+                { y: 'Alajuela', a: 100 },
+                { y: 'Heredia', a: 75},
+                { y: 'Cartago', a: 80},
+                { y: 'San Jose', a: 100},
+                { y: 'Puntarenas', a: 50},
+                { y: 'Guanacaste', a: 40}
             ],
             xkey: 'y',
-            ykeys: ['a', 'b', 'c'],
-            labels: ['Producto A', 'Producto B', 'Producto C'],
+            ykeys: ['a'],
+            labels: ['Promocion'],
+            xLabelsDiagonal: true,
+            xLabelMargin: 10, // set smaller margin to allow longer names like provincias, etc
             barColors: this.settings.colors,
-            grid: false
+            grid: false,
+            hideHover: true
         });
+        // assign the line chart object created
+        this.analyticsBarChart = analyticsBarChart;
+        // initializes line chart dropdown controls/selection of chart data
+        var self = this;
+        $("#bar-chart-options li a").on("click", function(e) {
+            e.preventDefault();
+            var chartDataSelected = $(this).data("barChartSet");
+            self.setBarChartData(chartDataSelected);
+            var chartDataSelectedText = $(this).text();
+            //update dropdown with selection
+            ($("#bar-chart-options").siblings("button.chart-selection-btn")).text(chartDataSelectedText);
+        })
     },
     setLineChartData: function(selectedDataId) {
         // get fake dataset
@@ -78,7 +92,19 @@ var DiDiAnalyticsCharts = {
             this.analyticsLineChart.setData(selectedData[0].data);
         }
     },
-    // request for server data might be here when service is ready
+    setBarChartData: function(selectedDataId) {
+        // get fake dataset
+        var dataSet = getBarChartData();
+        // get data according to selection
+        var selectedData = $.grep(dataSet, function(item){
+            return item.id === selectedDataId;
+        });
+
+        if(selectedData.length){
+            this.analyticsBarChart.setData(selectedData[0].data);
+        }
+    },
+    // request for server data might be here for integration with backend
     getLineChartData: function() {
         var dataSet = [];
 
@@ -148,42 +174,39 @@ function getLineChartData() {
 function getBarChartData() {
     var barChartData = [
         {
-            id: "numPersonas",
-            name: "# de personas",
+            id: "lugar",
+            name: "Lugar",
             data: [
-                { y: '2006', a: 100, b: 90, c: 100 },
-                { y: '2007', a: 75, b: 65, c: 100 },
-                { y: '2008', a: 50, b: 40, c: 50 },
-                { y: '2009', a: 75, b: 65, c: 2 },
-                { y: '2010', a: 50, b: 40, c: 100 },
-                { y: '2011', a: 75, b: 65, c: 100 },
-                { y: '2012', a: 100, b: 90, c: 100 }
+                { y: 'Alajuela', a: 100 },
+                { y: 'Heredia', a: 75},
+                { y: 'Cartago', a: 80},
+                { y: 'San Jose', a: 100},
+                { y: 'Puntarenas', a: 50},
+                { y: 'Guanacaste', a: 40}
             ]
         },
         {
             id: "criterio1",
             name: "criterio personalizado 1",
             data: [
-                { y: '2006', a: 100, b: 90, c: 100 },
-                { y: '2007', a: 75, b: 65, c: 100 },
-                { y: '2008', a: 50, b: 40, c: 1 },
-                { y: '2009', a: 75, b: 65, c: 100 },
-                { y: '2010', a: 50, b: 40, c: 100 },
-                { y: '2011', a: 75, b: 65, c: 1 },
-                { y: '2012', a: 100, b: 90, c: 100 }
+                { y: 'Alajuela', a: 100 },
+                { y: 'Heredia', a: 20},
+                { y: 'Cartago', a: 80},
+                { y: 'San Jose', a: 90},
+                { y: 'Puntarenas', a: 80},
+                { y: 'Guanacaste', a: 70}
             ]
         },
         {
             id: "criterio2",
             name: "criterio personalizado 2",
             data: [
-                { y: '2006', a: 100, b: 90, c: 100 },
-                { y: '2007', a: 75, b: 65, c: 100 },
-                { y: '2008', a: 50, b: 40, c: 100 },
-                { y: '2009', a: 75, b: 65, c: 100 },
-                { y: '2010', a: 50, b: 40, c: 100 },
-                { y: '2011', a: 75, b: 65, c: 100 },
-                { y: '2012', a: 100, b: 90, c: 100 }
+                { y: 'Alajuela', a: 60 },
+                { y: 'Heredia', a: 75},
+                { y: 'Cartago', a: 40},
+                { y: 'San Jose', a: 99},
+                { y: 'Puntarenas', a: 70},
+                { y: 'Guanacaste', a: 80}
             ]
         }
     ];
