@@ -68,6 +68,11 @@
 
 }
 
+.didi-modal.add-promo-modal .modal-dialog {
+  @extend .didi-dashboard-modal-base;
+
+}
+
 .add-event-content {
 //  font-size: 20px;
 }

@@ -9,17 +9,15 @@ var DiDiModals = {
 
     },
     addEvent: function (){
-        $(".add-btn").on("click", function(){
+        $(".add-btn.event-btn").on("click", function(){
             // change modal header add or edit event
             $(".add-event-modal .event-modal-header").text("Agregar Evento");
-            $(".didi-modal").modal({
+            $(".didi-modal.add-event-modal").modal({
                 backdrop: true,
                 show: true,
                 closable: true
             });
-            $(".didi-modal").modal("show");
-            console.log(this);
-            console.log($(this).closest(".didi-modal-header h2"));
+            $(".didi-modal.add-event-modal").modal("show");
 
         //  initialize map, date time controls
             DiDiSearchPlaceMap.init();
@@ -27,21 +25,19 @@ var DiDiModals = {
         });
 
         $(".didi-modal-close").click(function() {
-            $(".didi-modal").modal("hide");
+            $(".didi-modal.add-event-modal").modal("hide");
         });
     },
     editEvent: function (){
         $(".event-panel .edit-btn").on("click", function(){
             // change modal header add or edit event
             $(".add-event-modal .event-modal-header").text("Editar Evento");
-            $(".didi-modal").modal({
+            $(".didi-modal.add-event-modal").modal({
                 backdrop: true,
                 show: true,
                 closable: true
             });
-            $(".didi-modal").modal("show");
-            console.log(this);
-            console.log($(this).closest(".didi-modal-header h2"));
+            $(".didi-modal.add-event-modal").modal("show");
 
         //  initialize map, date time controls
             DiDiSearchPlaceMap.init();
@@ -49,12 +45,31 @@ var DiDiModals = {
         });
 
         $(".didi-modal-close").click(function() {
-            $(".didi-modal").modal("hide");
+            $(".didi-modal.add-event-modal").modal("hide");
+        });
+    },
+    addPromo: function() {
+        $(".add-btn.add-promo").on("click", function(){
+            console.log("add promo");
+            // change modal header add or edit event
+            $(".add-promo-modal .promo-modal-header").text("Agregar Evento");
+            $(".didi-modal.add-promo-modal").modal({
+                backdrop: true,
+                show: true,
+                closable: true
+            });
+            $(".didi-modal.add-promo-modal").modal("show");
+            console.log(this);
+            console.log($(this).closest(".didi-modal-header h2"));
+            $(".add-promo-modal .didi-modal-close").on("click", function() {
+                $(".didi-modal.add-promo-modal").modal("hide");
+            });
         });
     },
     init: function() {
         this.addEvent();
         this.editEvent();
+        this.addPromo();
     }
 };
 
