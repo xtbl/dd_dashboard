@@ -44,8 +44,12 @@ add and verify dynamic behavior for charts: can be modified with on change
 ->update styles and funcionality in barchart
 *fix wrapper position in high res
 ->create promotions modal
-    carousel
+    *markup/form
+    acordeon collapse : http://getbootstrap.com/javascript/#collapse
+    carousel http://getbootstrap.com/javascript/#carousel
     sliders
+
+->create product modal
 
 
 http://morrisjs.github.io/morris.js/index.html

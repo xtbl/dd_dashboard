@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DiDi Dashboard - Inicio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker.css">
+    <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--modal promo-->
+<!--<div class="modal fade didi-modal add-promo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">-->
+<div class="didi-modal add-promo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="add-promo-content">
+            <div class="didi-modal-header">
+                <h2 class="promo-modal-header">Agregar Promoción</h2>
+                <a class="didi-modal-close"><span><i class="glyphicon glyphicon-remove"></i></span></a>
+            </div>
+            <form role="form">
+                <!--dropdown producto o servicio-->
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        <span>Producto o Servicio</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <!--dropdown producto o servicio-->
+                <!--tipo promocion-->
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        <span>Tipo Promoción</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="promo-type-1" placeholder="50%">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="promo-type-2" placeholder="₡11000">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="promo-informacion" placeholder="Información">
+                    <span>No más de 42 caracteres</span>
+                </div>
+                <!--tipo promocion-->
+                <!--fechas-->
+                <div class="date-time-container">
+                    <div class="container datetimer-label-container">
+                        <div class="row">
+                            <div class="col-md-3"><label>De:</label></div>
+                            <div class="col-md-3"><label>A las:</label></div>
+                            <div class="col-md-3"><label>Hasta la(s):</label></div>
+                            <div class="col-md-3"><label>Del:</label></div>
+                        </div>
+                    </div>
+                    <div class="container datetimer-input-container-group">
+                        <div class="row ">
+                            <div class="col-md-3 datetimer-input-container-col">
+                                <input type="text" class="date start" />
+                                <span class="didi-calendar-ico start"></span>
+                            </div>
+                            <div class="col-md-3 datetimer-input-container-col">
+                                <input type="text" class="time start" />
+                                <span class="didi-chevron"></span>
+                            </div>
+                            <div class="col-md-3 datetimer-input-container-col">
+                                <input type="text" class="time end" />
+                            </div>
+                            <div class="col-md-3 datetimer-input-container-col">
+                                <input type="text" class="date end" />
+                                <span class="didi-calendar-ico end"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fechas-->
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Repetir
+                    </label>
+                </div>
+                <!--acordeon repetir-->
+                <!--http://getbootstrap.com/javascript/#collapse-->
+                <div id="demo" class="collapse in">...</div>
+                <!--acordeon repetir-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="promo-informacion" placeholder="Condiciones">
+                </div>
+                <h1>preview plantilla</h1>
+                <div class="form-group">
+                    <p>Resumen:</p>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
+                    <button type="submit" class="btn btn-primary accept-btn pull-right">Aceptar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--modal end-->
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- build:js scripts/main.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/datepair.js/dist/datepair.js"></script>
+<script src="bower_components/datepair.js/dist/jquery.datepair.js"></script>
+<script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
+<script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/modals.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<!--endbuild-->
+
+
+</body>
+</html>
