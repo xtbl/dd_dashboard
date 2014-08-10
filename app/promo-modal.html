@@ -13,6 +13,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker.css">
     <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css">
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -56,7 +57,8 @@
                     </ul>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="promo-type-1" placeholder="50%">
+                    <input type="text" class="form-control" id="promo-input-quantity" placeholder="50%">
+                    <input id="promo-slider-quantity" data-slider-id='promo-slider1' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="promo-type-2" placeholder="₡11000">
@@ -99,13 +101,73 @@
                 <!--fechas-->
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Repetir
+                        <input type="checkbox" class="checkbox-repetir-fecha" data-toggle="collapse" data-target="#repetir-colapsable"> Repetir
                     </label>
                 </div>
-                <!--acordeon repetir-->
+                <!--acordeon checkbox repetir-->
                 <!--http://getbootstrap.com/javascript/#collapse-->
-                <div id="demo" class="collapse in">...</div>
-                <!--acordeon repetir-->
+                <div id="repetir-colapsable" class="panel-collapse collapse in">
+                    COLAPSABLE
+                    <div class="form-group">
+                        <label for="tipo-repeticion" class="col-sm-4 control-label">Repetir cada:</label>
+                        <div class="col-sm-8">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="tipo-repeticion" data-toggle="dropdown">
+                                    <span>Semanal</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Semanal</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Opción 2</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Opción 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <span>Repetir en:</span>
+                        </div>
+                        <div class="col-sm-8 inline-checkbox-group">
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> L
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> K
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> M
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> J
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> V
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> S
+                                </label>
+                            </div>
+                            <div class="checkbox inline">
+                                <label>
+                                    <input type="checkbox"> D
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--acordeon checkbox repetir-->
                 <div class="form-group">
                     <input type="text" class="form-control" id="promo-informacion" placeholder="Condiciones">
                 </div>
@@ -135,6 +197,8 @@
 <script src="bower_components/datepair.js/dist/jquery.datepair.js"></script>
 <script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
 <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+
 <script src="scripts/main.js"></script>
 <script src="scripts/modals.js"></script>
 <!-- endbuild -->
@@ -142,6 +206,8 @@
 <!-- build:js scripts/plugins.js -->
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
 <!--endbuild-->
 
 

@@ -45,9 +45,10 @@ add and verify dynamic behavior for charts: can be modified with on change
 *fix wrapper position in high res
 ->create promotions modal
     *markup/form
-    acordeon collapse : http://getbootstrap.com/javascript/#collapse
-    carousel http://getbootstrap.com/javascript/#carousel
+    *acordeon collapse : http://getbootstrap.com/javascript/#collapse
     sliders
+    carousel http://getbootstrap.com/javascript/#carousel
+    testear en modal
 
 ->create product modal
 

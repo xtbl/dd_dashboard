@@ -52,7 +52,7 @@ var DiDiModals = {
         $(".add-btn.add-promo").on("click", function(){
             console.log("add promo");
             // change modal header add or edit event
-            $(".add-promo-modal .promo-modal-header").text("Agregar Evento");
+            $(".add-promo-modal .promo-modal-header").text("Agregar Promoción");
             $(".didi-modal.add-promo-modal").modal({
                 backdrop: true,
                 show: true,
@@ -64,6 +64,15 @@ var DiDiModals = {
             $(".add-promo-modal .didi-modal-close").on("click", function() {
                 $(".didi-modal.add-promo-modal").modal("hide");
             });
+        });
+        // init slider and update placeholder value of numeric input
+        var promoInputQuantityEl = $("#promo-input-quantity");
+        $("#promo-slider-quantity").slider({
+            formater: function(value) {
+                return 'Valor actual: ' + value;
+            }
+        }).on("slide", function(ev){
+            promoInputQuantityEl.attr("placeholder", ev.value + "%");
         });
     },
     init: function() {
