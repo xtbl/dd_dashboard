@@ -33,38 +33,38 @@
             <form role="form">
                 <!--dropdown producto o servicio-->
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                        <span>Producto o Servicio</span>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="promo-dropdown-producto-servicio" data-toggle="dropdown">
+                        <span>Filete término medio con orégano y menta</span>
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Filete término medio con orégano y menta</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Producto 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Producto 3</a></li>
                     </ul>
                 </div>
                 <!--dropdown producto o servicio-->
                 <!--tipo promocion-->
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="promo-dropdown-tipo-promo" data-toggle="dropdown">
                         <span>Tipo Promoción</span>
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="promo-dropdown-tipo-promo">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Something else here</a></li>
                     </ul>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="promo-input-quantity" placeholder="50%">
-                    <input id="promo-slider-quantity" data-slider-id='promo-slider1' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                    <input type="text" class="form-control promo-template-input" id="promo-input-quantity" placeholder="50%">
+                    <input id="promo-slider-quantity" class="promo-template-input" data-slider-id='promo-slider1' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="promo-type-2" placeholder="₡11000">
+                    <input type="text" class="form-control promo-template-input" id="promo-type-2" placeholder="₡11000">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="promo-informacion" placeholder="Información">
+                    <input type="text" class="form-control promo-template-input" id="promo-input-info" placeholder="Información">
                     <span>No más de 42 caracteres</span>
                 </div>
                 <!--tipo promocion-->
@@ -166,12 +166,103 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <span>Termina en:</span>
+                        </div>
+                        <div class="col-sm-8">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <div class="checkbox inline">
+                                <label><input type="checkbox"> Nunca</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <div class="checkbox inline">
+                                <label><input type="checkbox"> Después de:</label>
+                                <input type="number" class="short-input"> impresiones.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <div class="checkbox inline">
+                                <label><input type="checkbox"> En:</label>
+                                    <input type="text" class="date end short-input">
+                                    <span class="didi-calendar-ico end"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--acordeon checkbox repetir-->
                 <div class="form-group">
                     <input type="text" class="form-control" id="promo-informacion" placeholder="Condiciones">
                 </div>
-                <h1>preview plantilla</h1>
+
+                <!--preview plantilla-->
+                <div id="promo-custom-template" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#promo-custom-template" data-slide-to="0" class="active"></li>
+                        <li data-target="#promo-custom-template" data-slide-to="1"></li>
+                        <li data-target="#promo-custom-template" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=test1" alt="...">
+                            <div class="carousel-caption">
+                                <span>11.000</span><span>5.500</span>
+                                <h3>Filete Termino Medio</h3>
+                                <h4>Los martes disfruta del mejor plato de la casa</h4>
+                                <div class="promo-custom-background">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=test2" alt="...">
+                            <div class="carousel-caption">
+                                <span>11.000</span><span>5.500</span>
+                                <h3>Filete Termino Medio</h3>
+                                <h4>Los martes disfruta del mejor plato de la casa</h4>
+                                <div class="promo-custom-background">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=test3" alt="...">
+                            <div class="carousel-caption">
+                                <span>11.000</span><span>5.500</span>
+                                <h3>Filete Termino Medio</h3>
+                                <h4>Los martes disfruta del mejor plato de la casa</h4>
+                                <div class="promo-custom-background">
+                                    <span>Ensalada gratis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#promo-custom-template" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#promo-custom-template" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!--preview plantilla-->
+
                 <div class="form-group">
                     <p>Resumen:</p>
                     <textarea class="form-control" rows="3"></textarea>
@@ -198,6 +289,7 @@
 <script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
 <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
 
 <script src="scripts/main.js"></script>
 <script src="scripts/modals.js"></script>

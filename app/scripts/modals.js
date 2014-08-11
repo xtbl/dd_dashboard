@@ -50,7 +50,6 @@ var DiDiModals = {
     },
     addPromo: function() {
         $(".add-btn.add-promo").on("click", function(){
-            console.log("add promo");
             // change modal header add or edit event
             $(".add-promo-modal .promo-modal-header").text("Agregar Promoción");
             $(".didi-modal.add-promo-modal").modal({
@@ -59,8 +58,6 @@ var DiDiModals = {
                 closable: true
             });
             $(".didi-modal.add-promo-modal").modal("show");
-            console.log(this);
-            console.log($(this).closest(".didi-modal-header h2"));
             $(".add-promo-modal .didi-modal-close").on("click", function() {
                 $(".didi-modal.add-promo-modal").modal("hide");
             });
@@ -74,6 +71,25 @@ var DiDiModals = {
         }).on("slide", function(ev){
             promoInputQuantityEl.attr("placeholder", ev.value + "%");
         });
+
+//        detener carrusel .carousel('pause')
+//        setear bindings plantilla (imagen cupon)
+        function PromoTemplateSetup() {
+            // tipo promo
+            // promo-name, promo-price, promo-description
+//            capturar el onchange
+            $(".promo-template-input").on("input", function(ev){
+               console.log(".promo-template-input change detected");
+               console.log(".promo-template-input ev", ev);
+               // switch according to event source case
+            });
+//            averiguar el elemento fuente del onchange
+//            tomar el valor del elemento y asignarlo al elemento de plantilla correspondiente
+//            actualizar el template
+//
+        }
+        PromoTemplateSetup();
+
     },
     init: function() {
         this.addEvent();

@@ -46,12 +46,20 @@ add and verify dynamic behavior for charts: can be modified with on change
 ->create promotions modal
     *markup/form
     *acordeon collapse : http://getbootstrap.com/javascript/#collapse
-    sliders
-    carousel http://getbootstrap.com/javascript/#carousel
-    testear en modal
+    seccion collapse
+    *sliders
+    carousel http://getbootstrap.com/javascript/#carousel 2h
+        *incluir base 30m
+        setear funcionalidad binding con inputs 1h
+            -> usar change, input or keyup event continue binding and updating
+            usar multiple selectors o solo agregar una clase particular a los elementos a chequear
+        estilos 1h
+
+    arreglar estilos 30m
+    testear/fixes en modal 30m
 
 ->create product modal
-
+    2h
 
 http://morrisjs.github.io/morris.js/index.html
     other options
