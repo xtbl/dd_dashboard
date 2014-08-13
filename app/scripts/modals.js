@@ -75,6 +75,8 @@ var DiDiModals = {
 //        detener carrusel .carousel('pause')
 //        setear bindings plantilla (imagen cupon)
         function PromoTemplateSetup() {
+            $(".carousel").carousel();
+            $(".carousel").carousel('pause');
             // tipo promo
             // promo-name, promo-price, promo-description
 //            capturar el onchange

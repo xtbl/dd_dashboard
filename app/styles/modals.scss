@@ -125,3 +125,52 @@
 .pac-container {
   z-index: 1560 !important;
 }
+
+//----------------------------------------
+//                promo modal
+//----------------------------------------
+#promo-custom-template {
+  .carousel-indicators {
+    bottom: -5px;
+    z-index: 15;
+  }
+  .carousel-inner {
+    >.item {
+      img {
+        margin: 0 auto;
+        border: 2px solid $didi-light-grey-color;
+      }
+    }
+    .item {
+      .carousel-caption {
+        top: 1%;
+        padding-top: 5px;
+      }
+      .promo-name-description {
+        min-height: 70px;
+        p {
+          padding-left: 10px;
+          font-size: 13px;
+        }
+        h5 {
+          padding-left: 10px;
+          font-size: 18px;
+        }
+      }
+      .promo-price-container {
+        h3 {
+          margin-top: 5px;
+          text-align: left;
+          padding: 10px;
+        }
+      }
+      .promo-custom-background {
+        background: url('/images/promo_modal_background.png') no-repeat 62px 0px;
+        min-height: 100px;
+        h3 {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
