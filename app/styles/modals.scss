@@ -2,7 +2,7 @@
 
 .didi-dashboard-modal-base {
   @include didi-dashboard-modal;
-  width: 600px;
+  width: 610px;
   padding: 20px 10px 10px 10px;
   overflow: auto;
   .didi-modal-header {
@@ -130,9 +130,12 @@
 //                promo modal
 //----------------------------------------
 #promo-custom-template {
+  background-color: #5e5e5e;
+  margin-bottom: 18px;
   .carousel-indicators {
-    bottom: -5px;
+    bottom: -28px;
     z-index: 15;
+    background-color: #5e5e5e;
   }
   .carousel-inner {
     >.item {
@@ -143,8 +146,8 @@
     }
     .item {
       .carousel-caption {
-        top: 1%;
-        padding-top: 5px;
+        top: 0%;
+//        padding-top: 5px;
       }
       .promo-name-description {
         min-height: 70px;
@@ -165,7 +168,7 @@
         }
       }
       .promo-custom-background {
-        background: url('/images/promo_modal_background.png') no-repeat 62px 0px;
+        background: url('/images/promo_modal_background.png') no-repeat 62px 10px;
         min-height: 100px;
         h3 {
           padding: 20px;
@@ -173,4 +176,74 @@
       }
     }
   }
+  .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    top: 90%;
+    z-index: 5000;
+  }
+  .carousel-control {
+    &.left {
+      background-image: none;
+    }
+    &.right {
+      background-image: none;
+    }
+  }
 }
+
+// dropdown full-width
+.full-width-dropdown {
+  margin-bottom: 4px;
+  button {
+    &.dropdown-toggle {
+      width: 100%;
+      text-align: left;
+      color: $didi-grey-color;
+      background: url("/images/didi-icons/chevron.png") no-repeat 98% 50% white;
+      border: none;
+      border-radius: 0;
+    }
+  }
+  ul {
+    width: 100%;
+    &.dropdown-menu {
+      li {
+        a {
+          color: $didi-grey-color;
+        }
+      }
+    }
+  }
+}
+.slider {
+  &.slider-horizontal {
+    width: 100%;
+  }
+}
+
+.mini-info {
+  color: $didi-light-grey-color;
+}
+.short-input {
+  width: 40px;
+}
+
+#repetir-colapsable {
+  label {
+    text-transform: none;
+  }
+}
+
+#promo-informacion {
+
+}
+.no-text-transform {
+  text-transform: none;
+}
+
+#resumen-promo-add {
+  label {
+    @extend .no-text-transform;
+  }
+}
+
+

@@ -43,20 +43,24 @@ add and verify dynamic behavior for charts: can be modified with on change
 *update styles
 ->update styles and funcionality in barchart
 *fix wrapper position in high res
-->create promotions modal
+*create promotions modal
     *markup/form
     *acordeon collapse : http://getbootstrap.com/javascript/#collapse
     seccion collapse
     *sliders
-    carousel http://getbootstrap.com/javascript/#carousel 2h
+    *carousel http://getbootstrap.com/javascript/#carousel 2h
         *incluir base 30m
-        setear funcionalidad binding con inputs 1h
-            -> usar change, input or keyup event continue binding and updating
-            usar multiple selectors o solo agregar una clase particular a los elementos a chequear
-        estilos 1h
+        *setear funcionalidad binding con inputs 1h
+            *usar change, input or keyup event continue binding and updating
+            *usar multiple selectors o solo agregar una clase particular a los elementos a chequear
+    *testear/fixes en modal 30m
+    *setear date y time en promo modal
+    *add date en modal promo
+    preventdefault
 
-    arreglar estilos 30m
-    testear/fixes en modal 30m
+    *estilos
+
+    *arreglar estilos 30m
 
 ->create product modal
     2h

@@ -61,7 +61,11 @@ var DiDiModals = {
             $(".add-promo-modal .didi-modal-close").on("click", function() {
                 $(".didi-modal.add-promo-modal").modal("hide");
             });
+
         });
+        eventModalDateTimeInit();
+        individualDateTimeInit();
+
         // init slider and update placeholder value of numeric input
         var promoInputQuantityEl = $("#promo-input-quantity");
         $("#promo-slider-quantity").slider({
@@ -130,4 +134,20 @@ function eventModalDateTimeInit () {
 
 // initialize datepair
     $('.datetimer-input-container-col').datepair();
+};
+
+
+function individualDateTimeInit() {
+    // initialize input widgets first
+
+    $('.promo-date-input').datepicker({
+        'format': 'd/m/yyyy',
+        'autoclose': true
+    });
+
+// date controls for clickable icon
+    $('.didi-calendar-ico.promo-date').click(function() {
+        $('.promo-date-input').datepicker('show');
+    });
+
 };
