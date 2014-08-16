@@ -48,10 +48,22 @@ var DiDiModals = {
             $(".didi-modal.add-event-modal").modal("hide");
         });
     },
+    isClassInEventElement: function(ev, className){
+        if((typeof ev != 'undefined') && (typeof ev != 'undefined')){
+            return ($.inArray(className , ev.currentTarget.classList) > -1 ) ? true : false;
+        } else {
+            return false;
+        }
+    },
     addPromo: function() {
-        $(".add-btn.add-promo").on("click", function(){
-            // change modal header add or edit event
-            $(".add-promo-modal .promo-modal-header").text("Agregar Promoción");
+        var self = this;
+        $(".promo-btn").on("click", function(ev){
+            // change modal header add or edit
+            if(self.isClassInEventElement(ev, "add-promo")){
+                $(".add-promo-modal .promo-modal-header").text("Agregar Promoción");
+            } else {
+                $(".add-promo-modal .promo-modal-header").text("Editar Promoción");
+            }
             $(".didi-modal.add-promo-modal").modal({
                 backdrop: true,
                 show: true,
@@ -95,6 +107,9 @@ var DiDiModals = {
 //
         }
         PromoTemplateSetup();
+
+    },
+    addEditPromoSetup: function() {
 
     },
     init: function() {

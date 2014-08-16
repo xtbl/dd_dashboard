@@ -60,20 +60,15 @@ add and verify dynamic behavior for charts: can be modified with on change
 
     *estilos
 
-    *arreglar estilos 30m
+    *arreglar estilos
 
 ->create product modal
-    2h
-
-http://morrisjs.github.io/morris.js/index.html
-    other options
-        http://www.chartjs.org/
-        http://www.flotcharts.org/flot/examples/
-        http://designmodo.com/jquery-charts-graphs/
-    line and bar
-    set data objects
-    set colors
-    set styles
+    agregar markup
+    editar nombres
+    hacer dates
+    hacer slider
+    hacer galeria personalizada
+    add text update to dropdowns
 
 =======================
 modals

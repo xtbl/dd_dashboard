@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker.css">
+    <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css">
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -129,6 +132,86 @@
 </div>
     <div class="footer"><span>&copy; DiDi CR - 2014</span></div>
 
+
+
+<!--modal productos-->
+<div class=" didi-modal add-promo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="add-promo-content">
+<div class="didi-modal-header">
+    <h2 class="promo-modal-header">Agregar Promoción</h2>
+    <a class="didi-modal-close"><span><i class="glyphicon glyphicon-remove"></i></span></a>
+</div>
+<form role="form">
+    <div class="col-sm-8">
+        <label>Nombre del Producto/Servicio</label>
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-8">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="">
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="dropdown full-width-dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="promo-dropdown-tipo-promo" data-toggle="dropdown">
+                <span>Producto</span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="promo-dropdown-tipo-promo">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Producto</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="promo-template-input">Servicio</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label>Información</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label>Palabras clave</label>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="">
+            </div>
+        </div>
+    </div>
+    <!--fechas-->
+    <div class="date-time-container">
+        <div class="container datetimer-label-container">
+            <div class="row">
+                <div class="col-md-3"><label>De:</label></div>
+                <div class="col-md-3"><label>Hasta:</label></div>
+            </div>
+        </div>
+        <div class="container datetimer-input-container-group">
+            <div class="row ">
+                <div class="col-md-3 datetimer-input-container-col">
+                    <input type="text" class="date start" />
+                    <span class="didi-calendar-ico start"></span>
+                </div>
+                <div class="col-md-3 datetimer-input-container-col">
+                    <input type="text" class="date end" />
+                    <span class="didi-calendar-ico end"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fechas-->
+<div class="button-container">
+    <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
+    <button type="submit" class="btn btn-primary accept-btn pull-right">Aceptar</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!--modal end-->
+
+
+
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -141,25 +224,24 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-    <!-- build:js scripts/main.js -->
+<!-- build:js scripts/main.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+<script src="bower_components/datepair.js/dist/datepair.js"></script>
+<script src="bower_components/datepair.js/dist/jquery.datepair.js"></script>
+<script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
+<script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="bower_components/sass-bootstrap/js/bootstrap-affix.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-button.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bower_components/sass-bootstrap/js/bootstrap-tab.js"></script>
-    <!-- endbuild -->
+<script src="scripts/modals.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+<!--endbuild-->
 </body>
 </html>
