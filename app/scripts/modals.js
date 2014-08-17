@@ -49,6 +49,8 @@ var DiDiModals = {
         });
     },
     isClassInEventElement: function(ev, className){
+        console.log("method ev", ev);
+        console.log("method className", className);
         if((typeof ev != 'undefined') && (typeof ev != 'undefined')){
             return ($.inArray(className , ev.currentTarget.classList) > -1 ) ? true : false;
         } else {
@@ -109,13 +111,44 @@ var DiDiModals = {
         PromoTemplateSetup();
 
     },
-    addEditPromoSetup: function() {
+    addProduct: function() {
+        var self = this;
+        $(".product-btn").on("click", function(ev){
+            console.log("ev", ev);
+            console.log("self.isClassInEventElement", self.isClassInEventElement());
+            // change modal header add or edit
+            if(self.isClassInEventElement(ev, "add-product")){
+                $(".add-product-modal .promo-modal-header").text("Agregar Producto/Servicio");
+            } else {
+                $(".add-product-modal .promo-modal-header").text("Editar Producto/Servicio");
+            }
+            $(".didi-modal.add-product-modal").modal({
+                backdrop: true,
+                show: true,
+                closable: true
+            });
+            $(".didi-modal.add-product-modal").modal("show");
+            $(".add-product-modal .didi-modal-close").on("click", function() {
+                $(".didi-modal.add-product-modal").modal("hide");
+            });
 
+        });
+    },
+    dropDownDefaultActions: function() {
+        //update dropdown with selection
+        $(".dropdown-menu a").on("click", function(e){
+            e.preventDefault();
+            var dropdownItemSelectedText = $(this).text();
+            var displayedTextButton = $(this).closest(".dropdown").find("button");
+            displayedTextButton.text(dropdownItemSelectedText);
+        });
     },
     init: function() {
+        this.dropDownDefaultActions();
         this.addEvent();
         this.editEvent();
         this.addPromo();
+        this.addProduct();
     }
 };
 

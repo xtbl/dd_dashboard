@@ -67,8 +67,8 @@ add and verify dynamic behavior for charts: can be modified with on change
     *editar nombres
     *hacer dates
     *hacer slider
-    hacer galeria personalizada
-    add text update to dropdowns
+    *hacer galeria personalizada
+    *add text update to dropdowns
 
 =======================
 modals

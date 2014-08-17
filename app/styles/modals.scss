@@ -73,6 +73,7 @@
 
 }
 
+
 .add-event-content {
 //  font-size: 20px;
 }
@@ -255,6 +256,11 @@
 //----------------------------------------
 //                producto modal
 //----------------------------------------
+.didi-modal.add-product-modal .modal-dialog {
+  @extend .didi-dashboard-modal-base;
+
+}
+
 #alcance-servicio-slider {
   width: 50%;
   margin-left: 3%;
@@ -267,7 +273,9 @@
 #producto-custom-gallery {
   background-color: #5e5e5e;
   margin-bottom: 18px;
+  margin-top: 20px;
   padding-bottom: 50px;
+  padding-top: 50px;
   .carousel-inner {
     > .item {
       img {
@@ -277,9 +285,7 @@
     }
   }
   .carousel-indicators {
-//    bottom: -28px;
     z-index: 15;
-//    background-color: #5e5e5e;
   }
   .carousel-control {
     width: 5%;
@@ -295,10 +301,18 @@
       bottom: 26px;
     }
   }
+  .galeria-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    color: $didi-grey-color;
+    border-radius: 0;
+    white-space: normal;
+    max-width: 120px;
+    &:hover {
+      background-color: $didi-light-grey-color;
+      color: #ffffff;
+    }
+  }
 }
-
-// carousel arrows
-//.carousel-control.right {
-//  left: 33px;
-//  bottom: 1px;
-//}

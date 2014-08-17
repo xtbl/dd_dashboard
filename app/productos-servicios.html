@@ -73,7 +73,7 @@
                         <div class="col-md-8 col-padding-top-mid"><p>Detalle del producto o servicio</p></div>
                         <div class="col-md-1 text-center no-padding">
                             <span class="state-item state-active" role="button">Activo</span>
-                            <a class="btn btn-default edit-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
+                            <a class="btn btn-default edit-btn product-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -84,7 +84,7 @@
                         <div class="col-md-8 col-padding-top-mid"><p>Detalle del producto o servicio</p></div>
                         <div class="col-md-1 text-center no-padding">
                             <span class="state-item state-inactive" role="button">Inactivo</span>
-                            <a class="btn btn-default edit-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
+                            <a class="btn btn-default edit-btn product-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -95,7 +95,7 @@
                         <div class="col-md-8 col-padding-top-mid"><p>Detalle del producto o servicio</p></div>
                         <div class="col-md-1 text-center no-padding">
                             <span class="state-item state-active" role="button">Activo</span>
-                            <a class="btn btn-default edit-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
+                            <a class="btn btn-default edit-btn product-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -106,7 +106,7 @@
                         <div class="col-md-8 col-padding-top-mid"><p>Detalle del producto o servicio</p></div>
                         <div class="col-md-1 text-center no-padding">
                             <span class="state-item state-active" role="button">Activo</span>
-                            <a class="btn btn-default edit-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
+                            <a class="btn btn-default edit-btn product-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -117,13 +117,13 @@
                         <div class="col-md-8 col-padding-top-mid"><p>Detalle del producto o servicio</p></div>
                         <div class="col-md-1 text-center no-padding">
                             <span class="state-item state-active" role="button">Activo</span>
-                            <a class="btn btn-default edit-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
+                            <a class="btn btn-default edit-btn product-btn" href="#" role="button">Editar <i class="glyphicon glyphicon-pencil white"></i></a>
                         </div>
                     </div>
                 </div>
                 <!--ends scroller-->
                 <div class="row add-promo-container">
-                    <a class="btn add-btn"><span>Agregar</span> <i class="glyphicon glyphicon-plus"></i></a>
+                    <a class="btn add-btn add-product product-btn"><span>Agregar</span> <i class="glyphicon glyphicon-plus"></i></a>
                 </div>
             </div>
             <!--wide-panel container ends-->
@@ -135,11 +135,11 @@
 
 
 <!--modal productos-->
-<div class=" didi-modal add-promo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade didi-modal add-product-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog">
 <div class="add-promo-content">
 <div class="didi-modal-header">
-    <h2 class="promo-modal-header">Agregar Promoción</h2>
+    <h2 class="promo-modal-header">Agregar Producto/Servicio</h2>
     <a class="didi-modal-close"><span><i class="glyphicon glyphicon-remove"></i></span></a>
 </div>
 <form role="form">
@@ -208,40 +208,42 @@
         <input id="promo-slider-quantity" class="promo-template-input" data-slider-id='alcance-servicio-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
     </div>
 
-
+    <div class="col-sm-12">
     <!--preview plantilla-->
-    <div id="producto-custom-gallery" class="carousel slide" >
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#producto-custom-gallery" data-slide-to="0" class="active"></li>
-            <li data-target="#producto-custom-gallery" data-slide-to="1"></li>
-            <li data-target="#producto-custom-gallery" data-slide-to="2"></li>
-        </ol>
+        <div id="producto-custom-gallery" class="carousel slide" >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#producto-custom-gallery" data-slide-to="0" class="active"></li>
+                <li data-target="#producto-custom-gallery" data-slide-to="1"></li>
+                <li data-target="#producto-custom-gallery" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 1" alt="...">
+                </div>
+                <div class="item">
+                    <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 2" alt="...">
+                </div>
+                <div class="item">
+                    <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 3" alt="...">
+                </div>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 1" alt="...">
             </div>
-            <div class="item">
-                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 2" alt="...">
-            </div>
-            <div class="item">
-                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 3" alt="...">
-            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#producto-custom-gallery" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#producto-custom-gallery" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+            <button class="btn galeria-btn">Galería Personalizada</button>
 
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#producto-custom-gallery" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#producto-custom-gallery" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+        <!--preview plantilla-->
     </div>
-    <!--preview plantilla-->
-
 
 <div class="button-container">
     <button type="submit" class="btn btn-primary cancel-btn pull-left">Eliminar</button>
