@@ -63,10 +63,10 @@ add and verify dynamic behavior for charts: can be modified with on change
     *arreglar estilos
 
 ->create product modal
-    agregar markup
-    editar nombres
-    hacer dates
-    hacer slider
+    *agregar markup
+    *editar nombres
+    *hacer dates
+    *hacer slider
     hacer galeria personalizada
     add text update to dropdowns
 

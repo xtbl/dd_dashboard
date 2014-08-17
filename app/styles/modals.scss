@@ -251,3 +251,54 @@
   clear: both;
 }
 
+
+//----------------------------------------
+//                producto modal
+//----------------------------------------
+#alcance-servicio-slider {
+  width: 50%;
+  margin-left: 3%;
+  .slider-selection {
+    background: $didi-green-color;
+  }
+}
+
+
+#producto-custom-gallery {
+  background-color: #5e5e5e;
+  margin-bottom: 18px;
+  padding-bottom: 50px;
+  .carousel-inner {
+    > .item {
+      img {
+        margin: 0 auto;
+        border: 2px solid $didi-light-grey-color;
+      }
+    }
+  }
+  .carousel-indicators {
+//    bottom: -28px;
+    z-index: 15;
+//    background-color: #5e5e5e;
+  }
+  .carousel-control {
+    width: 5%;
+    top: auto;
+    bottom: 25px;
+    left: 5px;
+    &.left {
+      background-image: none;
+    }
+    &.right {
+      background-image: none;
+      left: 33px;
+      bottom: 26px;
+    }
+  }
+}
+
+// carousel arrows
+//.carousel-control.right {
+//  left: 33px;
+//  bottom: 1px;
+//}

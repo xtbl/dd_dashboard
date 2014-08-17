@@ -200,8 +200,51 @@
         </div>
     </div>
     <!--fechas-->
+    <div class="col-sm-12">
+        <label for="alcance-servicio-checkbox">*Alcance Servicio?</label>
+    </div>
+    <div class="col-sm-12">
+        <input type="checkbox"id="alcance-servicio-checkbox">
+        <input id="promo-slider-quantity" class="promo-template-input" data-slider-id='alcance-servicio-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+    </div>
+
+
+    <!--preview plantilla-->
+    <div id="producto-custom-gallery" class="carousel slide" >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#producto-custom-gallery" data-slide-to="0" class="active"></li>
+            <li data-target="#producto-custom-gallery" data-slide-to="1"></li>
+            <li data-target="#producto-custom-gallery" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 1" alt="...">
+            </div>
+            <div class="item">
+                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 2" alt="...">
+            </div>
+            <div class="item">
+                <img src="http://dummyimage.com/340x180/b0b0b0/6a6b7a.png&text=foto 3" alt="...">
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#producto-custom-gallery" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#producto-custom-gallery" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!--preview plantilla-->
+
+
 <div class="button-container">
-    <button type="submit" class="btn btn-primary cancel-btn pull-left">Cancelar</button>
+    <button type="submit" class="btn btn-primary cancel-btn pull-left">Eliminar</button>
     <button type="submit" class="btn btn-primary accept-btn pull-right">Aceptar</button>
 </div>
 </form>
